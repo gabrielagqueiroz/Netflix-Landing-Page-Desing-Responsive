@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix landing page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="assets/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</h1></a></li>
+            <li><a href="#">Tv Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="material-icons">search</i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="assets/bg.jpg" class="bg">
+
+        <div class="content">
+            <img src="assets/name.png" class="movietitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum fugiat blanditiis numquam voluptatem? Deleniti numquam modi ad, eligendi assumenda dicta autem dolore incidunt natus accusantium, error voluptatem cupiditate delectus explicabo.
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="material-icons">play_arrow</i>Play</a>
+                <a href="#"><i class="material-icons">add</i>My List</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="assets/play.png ">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="assets/video.mp4" controls="true"></video>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    </div>
+</body>
+    <script src="src/script.js"></script>
+</html>
